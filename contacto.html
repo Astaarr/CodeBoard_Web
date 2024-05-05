@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styleContacto.css" />
+    <link rel="shortcut icon" href="icon/Favicon.png" type="image/x-icon" />
     <title>Contacto</title>
 </head>
+
 <body>
-    <!--Header para contener el navegador y el logo-->
     <header>
         <div>
-            <img src="img/Logo.png"/>
+            <a href="index.html"><img src="img/Logo.png" /></a>
             <nav>
                 <ul>
                     <li><a href="#">Quienes somos</a></li>
                     <li><a href="#">Juegos</a></li>
                     <li><a href="#">Productos</a></li>
                     <li><a href="#">Personajes</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li>
+                        <a href="contacto.html" style="text-decoration: underline">Contacto</a>
+                    </li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <div class="container">
-            <div class="box-info">
-                <h1>CONTÁCTATE CON NOSOTROS</h1>
-                <div class="datos">
-                    <p><i class="telefono"></i> +34 123 456 789</p>
-                    <p><i class="email"></i> codeboard@gmail.com</p>
-                    <p><i class="calle"></i> Calle Menganito Nº6. España</p>
+        <div class="contenedorCentral">
+            <div class="cuadradoIzquierda">
+                <h3 class="titulo">¿Nos ponemos en contacto?</h3>
+                <p class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+                    tempora.
+                </p>
+                <div class="info">
+                    <div class="contact-item">
+                        <img src="img/mapa.png" class="icon" />
+                        <p>Calle de Fuencarral, 101</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/correo.png" class="icon" />
+                        <p>codeboard@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/telefono.png" class="icon" />
+                        <p>+34 123 456 789</p>
+                    </div>
                 </div>
             </div>
-            <form>
-                <div class="input">
-                    <input type="texto" placeholder="Nombre y apellido" required>
-                    <i class="usuario"></i>
-                </div>
-                <div class="input">
-                    <input type="email" required placeholder="Correo electrónico">
-                    <i class="correo"></i>
-                </div>
-                <div class="input">
-                    <input type="texto" placeholder="Asunto">
-                    <i class="asunto"></i>
-                </div>
-                <div class="input">
-                    <textarea placeholder="Escribe tu mensaje..."></textarea>
-                </div>
-                <button type="submit">Enviar mensaje</button>
-            </form>
+            <div class="cuadradoDerecha">
+                <h3 class="titulo">Tu Información</h3>
+                <form id="contactForm">
+                    <div class="input-container">
+                        <input type="text" id="name" class="input" placeholder="Nombre de Usuario" />
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email" class="input" placeholder="Email" />
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" id="phone" class="input" placeholder="Teléfono" />
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea id="mensaje" class="input" placeholder="Mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn" />
+                </form>
+            </div>
         </div>
     </main>
-    <!--Footer donde contendrá el pie de página-->
+
     <footer>
-        <img src="img/Logo.png" alt="logo" class="logo_footer"/>
+        <img src="img/Logo.png" alt="logo" class="logo_footer" />
         <div class="redes-sociales">
             <a href="#" class="redes-sociales-foto"><img src="img/facebook.png" alt="facebook" /></a>
             <a href="#" class="redes-sociales-foto"><img src="img/instagram.png" alt="instagram" /></a>
@@ -70,4 +87,5 @@
         <span class="copyright">&copy;2024 Codeboard. Todos todos los derechos reservados</span>
     </footer>
 </body>
+
 </html>
