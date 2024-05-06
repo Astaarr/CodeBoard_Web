@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon/Favicon.png" type="image/x-icon" />
+    <title>Registro</title>
+</head>
+<body>
+        <!--Header para contener el navegador y el logo-->
+        <header>
+            <div>
+                <a href="index.html"><img src="img/Logo.png"/></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html #quienes_somos">Quienes somos</a></li>
+                        <li><a href="index.html #juegos">Juegos</a></li>
+                        <li><a href="index.html #productos">Productos</a></li>
+                        <li><a href="index.html #personajes">Personajes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="login.html" style="text-decoration: underline;">Iniciar Sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <!--En el main estará toda la información importante de la pagina web-->
+    <main class="main-secundario">
+        <section class="login-container">
+            <div class="login-formulario">
+                <h2>Registro</h2>
+                <div class="logo-container">
+                    <img src="img/Logo.png" alt="Logo">
+                </div>
+                <form>
+                    <div class="formulario">
+                        <label for="gmail">Email:</label>
+                        <input type="text" id="gmail" name="gmail" required>
+                    </div>
+                    <div class="formulario">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="formulario">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Registrar</button>
+                </form>
+                <div class="contenedorRegistro">
+                    <p>Al registarse, acepta nuestras condiciones de uso y política de privacidad.</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <!--Footer donde contendrá el pie de página-->
+    <footer>
+        <img src="img/Logo.png" alt="logo" class="logo_footer"/>
+        <div class="redes-sociales">
+            <a href="#" class="redes-sociales-foto"><img src="img/facebook.png" alt="facebook" /></a>
+            <a href="#" class="redes-sociales-foto"><img src="img/instagram.png" alt="instagram" /></a>
+            <a href="#" class="redes-sociales-foto"><img src="img/twitter.png" alt="twitter" /></a>
+        </div>
+        <ul class="menu-footer">
+            <li class="menu-item">Legal</li>
+            <li class="menu-item">Cookies</li>
+            <li class="menu-item">Privacidad</li>
+        </ul>
+        <span class="copyright">&copy;2024 Codeboard. Todos todos los derechos reservados</span>
+    </footer>
+</body>
+</html>

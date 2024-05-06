@@ -128,14 +128,14 @@ hr {
 }
 
 .cuadradoIzquierda {
-    background-color: #222;
+    background-color: #222222b8;
     color: white;
     margin-right: 20px;
 }
 
 .cuadradoDerecha {
     background-color: #fff;
-    color: black;
+    color: #222222b8;
 }
 
 .titulo {
@@ -268,8 +268,15 @@ button:hover {
     max-width: 100%;
     height: auto;
 }
+.contenedorLogin{
+    text-align: center;
+}
 
+/* CSS registro.html */
 
+.contenedorRegistro{
+    text-align: center;
+}
 /*Footer de la página web*/
 footer{
     width: 100%;
