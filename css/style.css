@@ -246,6 +246,7 @@ hr {
     font-size: 18px;
     text-align: center;
 }
+
 /* Productos de index.html */
 .wrapper{
     background: linear-gradient(#D5A3FF 0%, #77A5F8);
@@ -373,7 +374,7 @@ font-weight: 400;
     margin-top: 5px;
 }
 /* Nose porque no me funciona los <li> de html------------ */
- .row .features .liProductos{
+.row .features .liProductos{
     display: flex;
     align-items: center;
     font-size: 15px;
