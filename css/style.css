@@ -232,7 +232,7 @@ textarea.input {
 }
 
 .formulario input {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -274,8 +274,9 @@ button:hover {
 
 /* CSS registro.html */
 
-.contenedorRegistro{
+.contenedorRegistro {
     text-align: center;
+    padding-top: 10px;
 }
 /*Footer de la página web*/
 footer{
