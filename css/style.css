@@ -84,11 +84,12 @@ main {
     width: 70%;
     margin: auto;
 }
-
+/*Quienes somos*/
 .quienes_somos {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    margin-bottom: 100px;
     align-items: center;
 }
 
@@ -113,10 +114,9 @@ h2 {
     font-size: 16px;
 }
 
-hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 1px solid black;
+/*Juegos*/
+.juegos{
+    margin-bottom: 100px;
 }
 .contenedorCards{
     display: flex;
@@ -194,6 +194,7 @@ hr {
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+/*Personajes*/
 .personajes{
     margin-bottom: 100px;
 }
@@ -258,7 +259,7 @@ hr {
     flex-wrap: wrap;
 }
 .container-productos{
-    background: linear-gradient(#D5A3FF 0%, #77A5F8);
+    background: linear-gradient(#c1ca44 0%, #77A5F8);
     width: 400px;
     background: #fff;
     padding: 30px;
@@ -301,7 +302,7 @@ hr {
     height: 85%;
     border-radius: inherit;
     transition: all 0.3s ease;
-    background: linear-gradient(#D5A3FF 0%, #77A5F8);
+    background: black
 }
 #tab-1:checked ~ .encabezadoProductos .deslizador{
     left: 0%;
@@ -377,8 +378,6 @@ font-weight: 400;
     font-size: 18px;
     margin-top: 5px;
 }
-/* Hasta aquí el cambio de idioma */
-/* Estilos restantes */
 .area-cartas .caracteristicas .liProducto{
     display: flex;
     align-items: center;
@@ -402,19 +401,12 @@ font-weight: 400;
     font-size: 18px;
     cursor: pointer;
     border-radius: 30px;
-    background: linear-gradient(#D5A3FF 0%, #77A5F8);
+    background: linear-gradient(#c1ca44  0%, #c9c909);
     transition: transform 0.3s ease;
 } 
 .container-productos button:hover{
     transform: scale(0.98);
 }
-
-
-
-
-
-
-
 
 /* CSS Contacto.html */
 .contenedorCentral {
