@@ -248,146 +248,151 @@ hr {
 }
 
 /* Productos de index.html */
-.wrapper{
+.productos{
+    margin-bottom: 100px;
+}
+.cajaProductos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container-productos{
     background: linear-gradient(#D5A3FF 0%, #77A5F8);
-    width: 400px;;
-    background: #fff ;
+    width: 400px;
+    background: #fff;
     padding: 30px;
     border-radius: 16px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
-.wrapper .productosHeader{
-    
+.container-productos .encabezadoProductos{
     display: flex;
-    align-items: center ;
+    align-items: center;
     height: 55px;
     border: 1px solid #ccc;
     border-radius: 30px;
     position: relative;
 }
-.productosHeader label{
-    
-    z-index:2 ;
+.encabezadoProductos label{
+    z-index: 2;
     height: 100%;
     width: 30%;
     position: relative;
     display: flex;
     font-size: 18px;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .botonProductos{
     background-color: #000;
-    
 }
-#tab-1:checked ~ .productosHeader .tab-1
-#tab-2:checked ~ .productosHeader .tab-2
-#tab-3:checked ~ .productosHeader .tab-3{
+#tab-1:checked ~ .encabezadoProductos .pestana-1,
+#tab-2:checked ~ .encabezadoProductos .pestana-2,
+#tab-3:checked ~ .encabezadoProductos .pestana-3{
     color: #fff;
 }
-.productosHeader label:nth-child(2){
+.encabezadoProductos label:nth-child(2){
     width: 40%;
 }
-.productosHeader .slider{
+.encabezadoProductos .deslizador{
     position: absolute;
     height: 85%;
     border-radius: inherit;
     transition: all 0.3s ease;
     background: linear-gradient(#D5A3FF 0%, #77A5F8);
 }
-#tab-1:checked ~ .productosHeader .slider{
+#tab-1:checked ~ .encabezadoProductos .deslizador{
     left: 0%;
     width: 90px;
     transform: translateX(5%);
 }
-#tab-2:checked ~ .productosHeader .slider{
+#tab-2:checked ~ .encabezadoProductos .deslizador{
     left: 50%;
     width: 120px;
     transform: translateX(-50%);
-    
 }
-#tab-3:checked ~ .productosHeader .slider{
+#tab-3:checked ~ .encabezadoProductos .deslizador{
     left: 100%;
     width: 95px;
     transform: translateX(-105%);
 }
-.wrapper input[type="radio"]{
+.container-productos input[type="radio"]{
     display: none;
 }
-.cards-area{
+.area-cartas{
     overflow: hidden;
 }
-.cards-area .cards{
+.area-cartas .cartas{
     width: 300%;
     display: flex;
 }
-.cards .row{
+.cartas .fila{
     width: 33.4%;
 }
-.cards .row-1{
+.cartas .fila-1{
     transition: all 0.3s ease;
 }
-#tab-1:checked ~ .cards-area .cards .row-1{
+#tab-1:checked ~ .area-cartas .cartas .fila-1{
     margin-left: 0%;
 }
-#tab-2:checked ~ .cards-area .cards .row-1{
+#tab-2:checked ~ .area-cartas .cartas .fila-1{
     margin-left: -33.4%;
 }
-#tab-3:checked ~ .cards-area .cards .row-1{
+#tab-3:checked ~ .area-cartas .cartas .fila-1{
     margin-left: -66.8%;
 }
-.row .pricing-details{
+.fila .detalles-precio{
     margin: 20px 0;
     text-align: center;
     padding-bottom: 25px;
     border-bottom: 1px solid #e6e6e6;
 }
-.pricing-details span{
+.detalles-precio span{
     font-size: 65px;
     font-weight: 600;
     position: relative;
     font-family: "Noto Sans", sans-serif;
 }
-.pricing-details span::before,
-.pricing-details span::after{
+.detalles-precio span::before,
+.detalles-precio span::after{
 position: absolute;
 font-family: "Poppins", sans-serif;
 font-weight: 400;
 }
-.pricing-details span::before{
-    content: "$";
+.detalles-precio span::before{
+    content: "€";
     font-size: 20px;
     left: -13px;
     top: 17px;
 }
-.pricing-details span::after{
-    content: "/mon";
+.detalles-precio span::after{
+    content: "/mes";
     font-size: 20px;
     right: -45px;
     bottom: 17px;
 }
-.pricing-details p{
+.detalles-precio p{
     font-size: 18px;
     margin-top: 5px;
 }
-/* Nose porque no me funciona los <li> de html------------ */
-.row .features .liProductos{
+/* Hasta aquí el cambio de idioma */
+/* Estilos restantes */
+.area-cartas .caracteristicas .liProducto{
     display: flex;
     align-items: center;
     font-size: 15px;
     margin-bottom: 10px;
     list-style: none;
 }
-.features .liProductos i{
+.caracteristicas .liProducto i{
     color: black;
 }
-.features .liProductos span{
-margin-left: 10px;
+.caracteristicas .liProducto span{
+    margin-left: 10px;
 }
-/* hasta aqui---------------------- */
-.wrapper button{
+.container-productos button{
     height: 55px;
     width: 100%;
     margin-top: 20px;
@@ -400,7 +405,7 @@ margin-left: 10px;
     background: linear-gradient(#D5A3FF 0%, #77A5F8);
     transition: transform 0.3s ease;
 } 
-.wrapper button:hover{
+.container-productos button:hover{
     transform: scale(0.98);
 }
 

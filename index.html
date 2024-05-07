@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="icon/Favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Acceso a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="icon/Favicon.png" type="image/x-icon">
     <title>CodeBoard</title>
 </head>
 
@@ -13,7 +16,7 @@
     <!--Header para contener el navegador y el logo-->
     <header>
         <div>
-            <a href="index.html"><img src="img/Logo.png" /></a>
+            <a href="index.html"><img src="img/Logo.png"></a>
             <nav>
                 <ul>
                     <li><a href="#quienes_somos">Quienes somos</a></li>
@@ -46,7 +49,7 @@
                     posible.
                 </p>
             </article>
-            <img src="img/Logobase1.png" alt="foto quienes somos" />
+            <img src="img/Logobase1.png" alt="foto quienes somos">
         </section>
         <hr>
         <section class="juegos" id="juegos">
@@ -56,7 +59,7 @@
                 <div class="card">
                     <!-- Parte delantera de nuestra carta -->
                     <div class="face front">
-                        <img src="img/darksoul3.jpg" alt="">
+                        <img src="img/darksoul3.jpg" alt="darksoul">
                         <h3>Dark Soul 3</h3>
                     </div>
                     <!-- Parte trasera de la carta -->
@@ -75,7 +78,7 @@
                 <div class="card">
                     <!-- Parte delantera de la carta -->
                     <div class="face front">
-                        <img src="img/eldenring.jpg" alt="">
+                        <img src="img/eldenring.jpg" alt="eldenring">
                         <h3>Elden Ring</h3>
                     </div>
                     <!-- Parte trasera de la carta -->
@@ -94,7 +97,7 @@
                 <div class="card">
                     <!-- Parte delantera de nuestra carta -->
                     <div class="face front">
-                        <img src="img/skyrim.jpg" alt="">
+                        <img src="img/skyrim.jpg" alt="skyrim">
                         <h3>Skyrim</h3>
                     </div>
                     <!-- Parte trasera de la carta -->
@@ -114,69 +117,88 @@
         <hr>
         <section class="productos" id="productos">
             <h2>Productos</h2>
-            <div class="wrapper">
-                <input type="radio" name="slider" id="tab-1">
-                <input type="radio" name="slider" id="tab-2" checked>
-                <input type="radio" name="slider" id="tab-3">
-                <div class="productosHeader">
-                    <label for="tab-1" class="tab-1">Basic</label>
-                    <label for="tab-2" class="tab-2">Estandar</label>
-                    <label for="tab-3" class="tab-3">Premium</label>
-                    <div class="slider"></div>
-                </div>
-                <div class="cards-area">
-                    <div class="cards">
-                        <div class="row row-1">
-                            <div class="pricing-details">
-                                <span>19</span>
-                                <p>Para Jugadores Novatos</p>
+            <div class="cajaProductos">
+                <div class="container-productos">
+                    <input type="radio" name="slider" id="tab-1">
+                    <input type="radio" name="slider" id="tab-2" checked>
+                    <input type="radio" name="slider" id="tab-3">
+                    <div class="encabezadoProductos">
+                        <label for="tab-1" class="pestana-1">Básico</label>
+                        <label for="tab-2" class="pestana-2">Estándar</label>
+                        <label for="tab-3" class="pestana-3">Premium</label>
+                        <div class="deslizador"></div>
+                    </div>
+                    <div class="area-cartas">
+                        <div class="cartas">
+                            <div class="fila fila-1">
+                                <div class="detalles-precio">
+                                    <span>9.99</span>
+                                    <p>Para Jugadores Novatos</p>
+                                </div>
+                                <ul class="caracteristicas">
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Acceso a una selección de
+                                            aventuras</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Foro exclusivo para
+                                            jugadores</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Soporte básico para
+                                            reglas</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Descuentos en futuras
+                                            expansiones</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="features">
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Acceso a una selección de aventuras</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Foro exclusivo para jugadores</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Soporte básico para reglas</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Descuentos en futuras expansiones</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <div class="pricing-details">
-                                <span>99</span>
-                                <p>Para Jugadores Experimentados</p>
+                            <div class="fila">
+                                <div class="detalles-precio">
+                                    <span>19.99</span>
+                                    <p>Para Jugadores Experimentados</p>
+                                </div>
+                                <ul class="caracteristicas">
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Acceso ilimitado a todas
+                                            las
+                                            aventuras</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Foro exclusivo con
+                                            desarrolladores</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Soporte avanzado para
+                                            reglas y
+                                            personalización</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Descuentos exclusivos en
+                                            mercancía oficial</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="features">
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Acceso ilimitado a todas las aventuras</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Foro exclusivo con desarrolladores</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Soporte avanzado para reglas y personalización</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Descuentos exclusivos en mercancía oficial</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <div class="pricing-details">
-                                <span>49</span>
-                                <p>Para Grupos y Equipos</p>
+                            <div class="fila">
+                                <div class="detalles-precio">
+                                    <span>29.99</span>
+                                    <p>Para Grupos y Equipos</p>
+                                </div>
+                                <ul class="caracteristicas">
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Acceso compartido a
+                                            biblioteca
+                                            de módulos y herramientas de creación de contenido</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Foros privados para cada
+                                            grupo
+                                            de juego</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Soporte personalizado para
+                                            la
+                                            creación de mundos</span>
+                                    </li>
+                                    <li class="liProducto"><i class="fas fa-check"></i><span>Descuentos especiales en
+                                            eventos y convenciones</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="features">
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Acceso compartido a biblioteca de módulos y herramientas de creación de contenido</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Foros privados para cada grupo de juego</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Soporte personalizado para la creación de mundos</span>
-                                </li>
-                                <li class="liProductos"><i class="fas fa-check"></i><span>Descuentos especiales en eventos y convenciones</span>
-                                </li>
-                            </ul>
                         </div>
                     </div>
+                    <button class="botonProductos">Elige un plan</button>
                 </div>
-                <button class="botonProductos">Elige un plan</button>
             </div>
         </section>
         <hr>
