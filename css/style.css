@@ -16,6 +16,8 @@ body{
     background-color: rgb(255, 255, 255);
     font-family: myFont;
     color: black;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /*Webkit para cambiar el scroll bar*/
@@ -48,6 +50,7 @@ header div{
 }
 header div img{
     width: 70px;
+    height: auto;
 }
 header div nav{
     padding-top: 28px;
@@ -92,27 +95,28 @@ main {
     margin-top: 50px;
     margin-bottom: 100px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 h2 {
     padding-bottom: 35px;
     text-align: center;
     color: #dae529;
-    font-size: 36px;
+    font-size: 2.25rem;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
 }
 
 .quienes_somos img {
-    width: 240px;
-    height: 240px;
+    width: 100%;
+    max-width: 240px;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 }
 
 .quienes_somos p {
     text-align: justify;
-    padding-right: 80px;
-    font-size: 16px;
+    padding-right: 2rem;
+    font-size: 1rem;
 }
 
 /*Juegos*/
@@ -128,7 +132,8 @@ h2 {
 .card{
     position: relative;
     width: 300px;
-    height: 350px;
+    max-width: 300px;
+    height: 300px;
     margin: 20px;
     display: inline-block;
 }
@@ -160,6 +165,7 @@ h2 {
     color: #fff;
     background: rgb(0,0,0,0.4);
     text-align: center;
+    font-size: 1rem;
 }
 .card .back{
     transform: perspective(600px) rotateY(180deg);
@@ -182,7 +188,7 @@ h2 {
     color: #f3f3f3;
 }
 .card .back h3{
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-top: 20px;
     letter-spacing: 2px;
 }
@@ -212,8 +218,10 @@ h2 {
     overflow-x: scroll;
     scroll-padding: 30px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    flex-wrap: nowrap;
 }
 .contenedorPersonajes .cardPersonajes{
+    flex: 0 0 auto;
     display: flex;
     flex: 0 0 100%;
     flex-direction: column;
@@ -241,11 +249,11 @@ h2 {
 .cardPersonajes h3{
     margin-top: 25px;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 .cardPersonajes{
     margin-top: 4px;
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -281,7 +289,7 @@ h2 {
     width: 30%;
     position: relative;
     display: flex;
-    font-size: 18px;
+    font-size: 1rem;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -352,7 +360,7 @@ h2 {
     border-bottom: 1px solid #e6e6e6;
 }
 .detalles-precio span{
-    font-size: 65px;
+    font-size: 4.0625rem;
     font-weight: 600;
     position: relative;
     font-family: "Noto Sans", sans-serif;
@@ -365,24 +373,24 @@ font-weight: 400;
 }
 .detalles-precio span::before{
     content: "€";
-    font-size: 20px;
+    font-size: 1.25rem;
     left: -13px;
     top: 17px;
 }
 .detalles-precio span::after{
     content: "/mes";
-    font-size: 20px;
+    font-size: 1.25rem;
     right: -45px;
     bottom: 17px;
 }
 .detalles-precio p{
-    font-size: 18px;
+    font-size: 1rem;
     margin-top: 5px;
 }
 .area-cartas .caracteristicas .liProducto{
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
     margin-bottom: 10px;
     list-style: none;
 }
@@ -399,7 +407,7 @@ font-weight: 400;
     border: none;
     outline: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 30px;
     background: linear-gradient(#c1ca44  0%, #c9c909);
@@ -415,6 +423,7 @@ font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cuadradoIzquierda,
@@ -436,7 +445,7 @@ font-weight: 400;
 }
 
 .titulo {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -455,7 +464,7 @@ font-weight: 400;
 }
 
 .icon {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-right: 10px;
     width: 30px;
 }
@@ -467,6 +476,7 @@ font-weight: 400;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 textarea.input {
@@ -482,6 +492,7 @@ textarea.input {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 1rem;
 }
 
 .btn:hover {
@@ -494,14 +505,16 @@ textarea.input {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80%;
+    min-height: 80vh;
+    flex-wrap: wrap;
 }
 
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
+    max-width: 900px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -517,6 +530,7 @@ textarea.input {
 
 .login-formulario h2 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .formulario {
@@ -529,10 +543,11 @@ textarea.input {
 }
 
 .formulario input {
-    width: 94%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
@@ -592,7 +607,7 @@ footer{
     overflow-x: hidden;
 }
 .logo_footer{
-    height: 80px;
+    height: 60px;
     margin-bottom: 10px;
 }
 .redes-sociales{
@@ -603,8 +618,8 @@ footer{
     margin-bottom: 10px;
 }
 .redes-sociales-foto{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    height: 40px;
 }
 .menu-footer{
     display: flex;
@@ -614,10 +629,10 @@ footer{
     margin-bottom: 10px;
     list-style: none;
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
 }
 .menu-item{
-    margin: 10px 15px;
+    margin: 5px 10px;
     cursor: pointer;
     opacity: 0.6;
 }
@@ -628,4 +643,5 @@ footer{
     color: white;
     opacity: 0.3;
     text-align: center;
+    font-size: 0.8rem;
 }
