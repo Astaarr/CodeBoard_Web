@@ -105,7 +105,13 @@ h2 {
     font-size: 2.25rem;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
 }
+.texto-container {
+    flex-basis: 50%; 
+}
 
+.imagen-container {
+    flex-basis: 40%;
+}
 .quienes_somos img {
     width: 100%;
     max-width: 240px;
