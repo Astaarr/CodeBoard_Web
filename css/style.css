@@ -84,12 +84,45 @@ header nav ul li a {
     padding: 10px 20px;
 }
 /* CSS Index.html */
+.fondo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.fondo img {
+    max-width: 100%; 
+    display: block;
+}
+.texto_inicio{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -100%); 
+    text-align: center; 
+    color: white; 
+    z-index: 1;
+}
+.texto_inicio h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.texto_inicio p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.texto_inicio a{
+    background-color: #dae529;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 main {
     width: 70%;
     margin: auto;
 }
 /*Quienes somos*/
-.quienes_somos {
+.quienes_somos { 
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
