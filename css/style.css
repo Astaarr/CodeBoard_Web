@@ -13,7 +13,8 @@ html {
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    background: white;
     font-family: myFont;
     color: black;
     font-size: 16px;
@@ -93,7 +94,13 @@ header nav ul li a {
     position: relative;
     overflow: hidden;
 }
+/*
 .fondo img {
+    max-width: 100%; 
+    display: block;
+}
+*/
+.fondo video {
     max-width: 100%; 
     display: block;
 }
