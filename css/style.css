@@ -56,12 +56,14 @@ header div img{
     animation: haciaAbajo 1s ease forwards;
 }
 header div nav{
-    padding-top: 28px;
+    padding-top: 18px;
 }
 header nav ul {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
     list-style: none;
+    flex-direction: row;
     opacity: 0;
     animation: haciaAbajo 1s ease forwards;
 }
@@ -79,14 +81,64 @@ header nav ul li::after {
     background-color: transparent;
     transition: width 0.8s ease; 
 }
-header nav ul li:hover::after {
+.links:hover::after {
     border-bottom: 2px solid white; 
     width: 100%;
 }
+.links-hamburguesa::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -2px; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    transition: background-color 0.8s ease;
+    z-index: -1;
+}
+
+.links-hamburguesa:hover::after {
+    background-color: yellow;
+}
 header nav ul li a {
+    height: 100%;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.hamburguesa_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.hamburguesa_bar li{
+    width: 100%;
+}
+.hamburguesa_bar a{
+    width: 100%;
+    color: black;
+}
+.boton-menu{
+    display: none;
+}
+#cerrarMenu{
+    height: 26px;
+    width: 26px;
+}
+#mostrarMenu{
+    height: 26px;
+    width: 26px;
 }
 /* CSS Index.html */
 .fondo {
@@ -715,9 +767,16 @@ footer{
     
 }
 @media (max-width: 992px) {
-    
+    .links{
+        display: none;
+    }
+    .boton-menu{
+        display: flex;
+    }
 }
 
 @media (max-width: 576px){
-
+    .hamburguesa_bar{
+        width: 100%;
+    }
 }

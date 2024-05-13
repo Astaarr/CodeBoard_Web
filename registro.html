@@ -13,13 +13,23 @@
             <div>
                 <a href="index.html"><img src="img/Logo.png" alt="Logo de la empresa"></a>
                 <nav>
+                    <ul class="hamburguesa_bar">
+                        <li onclick=cerrarMenu()><a><img src="img/x.png" id="cerrarMenu"></a></li>
+                        <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#quienes_somos">Quienes somos</a></li>
+                        <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#juegos">Juegos</a></li>
+                        <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#personajes">Personajes</a></li>
+                        <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#productos">Productos</a></li>
+                        <li class="links-hamburguesa hamburguesa_opcion"><a href="contacto.html">Contacto</a></li>
+                        <li class="links-hamburguesa hamburguesa_opcion"><a href="login.html">Iniciar Sesión</a></li>
+                    </ul>
                     <ul>
-                        <li><a href="index.html#quienes_somos">Quienes somos</a></li>
-                        <li><a href="index.html#juegos">Juegos</a></li>
-                        <li><a href="index.html#personajes">Personajes</a></li>
-                        <li><a href="index.html#productos">Productos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="login.html" style="text-decoration: underline;">Iniciar Sesión</a></li>
+                        <li class="links"><a href="index.html#quienes_somos">Quienes somos</a></li>
+                        <li class="links"><a href="index.html#juegos">Juegos</a></li>
+                        <li class="links"><a href="index.html#personajes">Personajes</a></li>
+                        <li class="links"><a href="index.html#productos">Productos</a></li>
+                        <li class="links"><a href="contacto.html">Contacto</a></li>
+                        <li class="links"><a href="login.html" style="text-decoration: underline;">Iniciar Sesión</a></li>
+                        <li class="boton-menu" onclick=mostrarMenu()><a><img src="img/menu.png" id="mostrarMenu"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -70,5 +80,6 @@
         </ul>
         <span class="copyright">&copy;2024 Codeboard. Todos todos los derechos reservados</span>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
