@@ -17,3 +17,31 @@ opcionesMenu.forEach(opcion => {
         cerrarMenu(); 
     });
 });
+
+
+
+// Selecciona todos los elementos HTML que tienen la clase "input"
+const inputs = document.querySelectorAll(".input");
+
+//Hace el focus como de legend
+function focusFunc() {
+    let parent = this.parentNode;  // Obtiene el elemento padre del elemento actual
+    parent.classList.add("focus");  // Añade la clase "focus" al elemento padre
+}
+
+//Hace el blur como de legend
+function blurFunc() {
+  let parent = this.parentNode;  // Obtiene el elemento padre del elemento actual
+  // Si el campo está vacío, quita la clase "focus"
+if (this.value == "") {
+    parent.classList.remove("focus");
+}
+}
+
+// Itera sobre cada elemento de la lista "inputs"
+inputs.forEach((input) => {
+  // Agrega un event listener para (focus)
+    input.addEventListener("focus", focusFunc);
+  // Agrega un event listener para (blur)
+    input.addEventListener("blur", blurFunc);
+});

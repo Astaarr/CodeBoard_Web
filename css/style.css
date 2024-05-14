@@ -704,7 +704,6 @@ textarea.input{
     align-items: center;
     font-size: 1.2rem;
 }
-
 .icon{
     font-size: 35px;
     margin-right: 0.7rem;
@@ -1061,6 +1060,9 @@ footer{
     }
     .texto_inicio a{
         padding: 6px 14px;
+    }
+    .information img{
+        width: 40px;
     }
 }
 
