@@ -774,9 +774,54 @@ footer{
         display: flex;
     }
 }
-
+@media (max-width:895px){
+    .texto_inicio{
+        transform: translate(-50%, -70%); 
+    }
+}
+@media (max-width: 768px){
+    .texto_inicio h1{
+        font-size: 2.5rem;
+    }
+    .texto_inicio p{
+        font-size: 1.25rem;
+    }
+    .texto_inicio a{
+        padding: 8px 16px;
+    }
+}
 @media (max-width: 576px){
     .hamburguesa_bar{
         width: 100%;
+    }
+    .container-productos{
+        width: 340px;
+    }
+    .texto_inicio h1{
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+    .texto_inicio p{
+        font-size: 1rem;
+    }
+    .texto_inicio a{
+        padding: 6px 14px;
+    }
+}
+@media (max-width: 446px){
+    .texto_inicio{
+        transform: translate(-50%, -60%); 
+    }
+    .texto_inicio h1{
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+    .texto_inicio p{
+        font-size: 0.800rem;
+        margin-bottom: 10px
+    }
+    .texto_inicio a{
+        font-size: 0.675rem;
+        padding: 2px 8px;
     }
 }
