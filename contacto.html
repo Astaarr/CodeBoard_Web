@@ -12,11 +12,12 @@
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="img/Logo.png" alt="Logo de la empresa"/></a>
+            <a href="index.html"><img src="img/Logo.png" alt="Logo de la empresa" /></a>
             <nav>
                 <ul class="hamburguesa_bar">
                     <li onclick=cerrarMenu()><a><img src="img/x.png" id="cerrarMenu"></a></li>
-                    <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#quienes_somos">Quienes somos</a></li>
+                    <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#quienes_somos">Quienes
+                            somos</a></li>
                     <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#juegos">Juegos</a></li>
                     <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#personajes">Personajes</a></li>
                     <li class="links-hamburguesa hamburguesa_opcion"><a href="index.html#productos">Productos</a></li>
@@ -37,114 +38,72 @@
     </header>
 
     <main>
-        <!--<div class="contenedorCentral">
-            <div class="cuadradoIzquierda">
-                <h3 class="titulo">¿Nos ponemos en contacto?</h3>
-                <p class="texto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-                    tempora.
-                </p>
-                <div class="info">
-                    <div class="contacto-item">
-                        <img src="img/mapa.png" class="icon" alt="mapa"/>
-                        <p>Calle de Fuencarral, 101</p>
+        <div class="contenedorFormulario">
+            <div class="form">
+                <div class="infoContacto">
+                    <h3 class="titulo">¿Nos ponemos en contacto?</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+                        tempora.</p>
+                    <div class="info">
+                        <div class="information">
+                            <img src="img/mapaBlanco.png" class="icon" alt="mapa" />
+                            <p>Calle de Fuencarral, 101</p>
+                        </div>
+                        <div class="information">
+                            <img src="img/correoBlanco.png" class="icon" alt="correo" />
+                            <p>codeboard@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="img/telefonoBlanco.png" class="icon" alt="telefono" />
+                            <p>+34 123 456 789</p>
+                        </div>
                     </div>
-                    <div class="contacto-item">
-                        <img src="img/correo.png" class="icon" alt="correo"/>
-                        <p>codeboard@gmail.com</p>
-                    </div>
-                    <div class="contacto-item">
-                        <img src="img/telefono.png" class="icon" alt="telefono"/>
-                        <p>+34 123 456 789</p>
+                    <div class="redesSociales">
+                        <p>Conecta con nosotros:</p>
+                        <div class="iconosRedes">
+                            <a href="#"><img src="img/instagramBlanco.png"></a>
+                            <a href="#"><img src="img/twitterBlanco.png"></a>
+                            <a href="#"><img src="img/facebookBlanco.png"></a>
+                            <a href="#"><img src="img/youtube.png"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="cuadradoDerecha">
-                <h3 class="titulo">Tu Información</h3>
-                <form id="contactoFormulario">
-                    <div class="input-container">
-                        <input type="text" id="name" class="input" placeholder="Nombre de Usuario" />
-                    </div>
-                    <div class="input-container">
-                        <input type="email" id="email" class="input" placeholder="Email" />
-                    </div>
-                    <div class="input-container">
-                        <input type="tel" id="phone" class="input" placeholder="Teléfono" />
-                    </div>
-                    <div class="input-container textarea">
-                        <textarea id="mensaje" class="input" placeholder="Mensaje"></textarea>
-                    </div>
-                    <input type="submit" value="Enviar" class="btn" />
-                </form>
-            </div>
-            </div>-->
-            <div class="contenedorFormulario">
-                <div class="form">
-                    <div class="infoContacto">
-                        <h3 class="titulo">¿Nos ponemos en contacto?</h3>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-                            tempora.</p>
-                        <div class="info">
-                            <div class="information">
-                                <img src="img/mapaBlanco.png" class="icon" alt="mapa"/>
-                                <p>Calle de Fuencarral, 101</p>
-                            </div>
-                            <div class="information">
-                                <img src="img/correoBlanco.png" class="icon" alt="correo"/>
-                                <p>codeboard@gmail.com</p>
-                            </div>
-                            <div class="information">
-                                <img src="img/telefonoBlanco.png" class="icon" alt="telefono"/>
-                                <p>+34 123 456 789</p>
-                            </div>
+                <div class="infoForm">
+                    <form id="contactForm">
+                        <h3 class="titulo">Tu Información!</h3>
+                        <div class="contenedorInput">
+                            <input type="text" id="name" class="input">
+                            <label>Nombre de Usuario</label>
+                            <span>Nombre de Usuario .</span>
+                            <i class="fa-solid fa-address-card prueba"></i>
                         </div>
-                        <div class="redesSociales">
-                            <p>Conecta con nosotros:</p>
-                            <div class="iconosRedes">
-                                <a href="#"><img src="img/instagramBlanco.png"></a>
-                                <a href="#"><img src="img/twitterBlanco.png"></a>
-                                <a href="#"><img src="img/facebookBlanco.png"></a>
-                                <a href="#"><img src="img/youtube.png"></a>
-                            </div>
+                        <div class="contenedorInput">
+                            <input type="text" id="email" class="input">
+                            <label>Email</label>
+                            <span>Email</span>
+                            <i class="fa-solid fa-envelope prueba"></i>
                         </div>
-                    </div>
-                    <div class="infoForm">
-                        <form id="contactForm">
-                            <h3 class="titulo">Tu Información!</h3>
-                            <div class="contenedorInput">
-                                <input type="text" id="name" class="input">
-                                <label>Nombre de Usuario</label>
-                                <span>Nombre de Usuario .</span>
-                                <i class="fa-solid fa-address-card prueba"></i>
-                            </div>
-                            <div class="contenedorInput">
-                                <input type="text" id="email" class="input">
-                                <label>Email</label>
-                                <span>Email</span>
-                                <i class="fa-solid fa-envelope prueba"></i>
-                            </div>
-                            <div class="contenedorInput">
-                                <input type="tel" id="phone" class="input">
-                                <label>Teléfono</label>
-                                <span>Teléfono</span>
-                                <i class="fa-solid fa-phone prueba"></i>
-                            </div>
-                            <div class="input-container textarea">
-                                <textarea id="mensaje" class="input" placeholder="Mensaje"></textarea>
-                                
-                            </div>
-                            <input type="submit" value="Send" class="btn" >
-                        </form>
-                    </div>
-                </div> 
+                        <div class="contenedorInput">
+                            <input type="tel" id="phone" class="input">
+                            <label>Teléfono</label>
+                            <span>Teléfono</span>
+                            <i class="fa-solid fa-phone prueba"></i>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea id="mensaje" class="input" placeholder="Mensaje"></textarea>
+                        </div>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
             </div>
+        </div>
     </main>
     <footer>
         <img src="img/Logo.png" alt="logo" class="logo_footer" />
         <div class="redes-sociales">
-            <a href="#" class="redes-sociales-foto"><img src="img/facebook.png" alt="facebook"/></a>
-            <a href="#" class="redes-sociales-foto"><img src="img/instagram.png" alt="instagram"/></a>
-            <a href="#" class="redes-sociales-foto"><img src="img/twitter.png" alt="twitter"/></a>
+            <a href="#" class="redes-sociales-foto"><img src="img/facebook.png" alt="facebook" /></a>
+            <a href="#" class="redes-sociales-foto"><img src="img/instagram.png" alt="instagram" /></a>
+            <a href="#" class="redes-sociales-foto"><img src="img/twitter.png" alt="twitter" /></a>
         </div>
         <ul class="menu-footer">
             <li class="menu-item">Legal</li>

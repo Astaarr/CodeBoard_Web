@@ -55,3 +55,21 @@ document.getElementById('sign-up').addEventListener('click', function() {
     document.querySelector('.login').classList.add('hide');
     document.querySelector('.register').classList.remove('hide');
 });
+
+// Login
+const btnLogin = document.getElementById('sign-in');
+const btnRegistrarse = document.getElementById('sign-up');
+const formularioLogin = document.querySelector(".login");
+const formularioRegistrarse = document.querySelector(".register");
+
+
+btnLogin.addEventListener("click", e => {
+    formularioRegistrarse.classList.add("hide");
+    formularioLogin.classList.remove("hide")
+})
+
+
+btnRegistrarse.addEventListener("click", e => {
+    formularioLogin.classList.add("hide");
+    formularioRegistrarse.classList.remove("hide")
+})
