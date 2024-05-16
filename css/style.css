@@ -150,15 +150,9 @@ header nav ul li a {
     position: relative;
     overflow: hidden;
 }
-/*
-.fondo img {
-    max-width: 100%; 
-    display: block;
-}
-*/
 .fondo video {
     max-width: 100%; 
-    display: block;
+    height: auto;
 }
 .texto_inicio{
     position: absolute;
@@ -198,38 +192,42 @@ main {
 /*Quienes somos*/
 .quienes_somos { 
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    flex-direction: row;
+    justify-content: space-around; /* Ajusta para un espaciado más uniforme */
     align-items: center;
     flex-wrap: wrap;
+    width: 80%; /* Controla el ancho del contenedor para evitar que sea demasiado ancho */
+    max-width: 1200px; /* Establece un máximo para grandes pantallas */
+    margin: auto; /* Esto centrará la sección horizontalmente */
+    background-color: #ffffff; /* Opcional: fondo para contraste */
+    border-radius: 20px; /* Opcional: bordes redondeados */
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.texto-container, .imagen-container {
+    flex: 1 1 50%; /* Permite que ambos ocupen el 50% del espacio disponible */
+    padding: 20px; /* Añade algo de espacio interno */
 }
 
 h2 {
-    padding-bottom: 35px;
+    padding-bottom: 20px;
     text-align: center;
     color: #dae529;
     font-size: 2.25rem;
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
-}
-.texto-container {
-    flex-basis: 50%; 
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6); /* Suaviza la sombra para mejor legibilidad */
 }
 
-.imagen-container {
-    flex-basis: 40%;
-}
 .quienes_somos img {
     width: 100%;
-    max-width: 240px;
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+    max-width: 200px; /* Asegura que la imagen nunca sea más grande que su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Menos intenso para no distraer */
 }
 
 .quienes_somos p {
     text-align: justify;
-    padding-right: 2rem;
-    font-size: 1rem;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
 }
 
 /*Juegos*/
@@ -751,98 +749,13 @@ textarea.input{
     color: #fff;
 }
 
-/*
-.contenedorCentral {
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.cuadradoIzquierda,
-.cuadradoDerecha {
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.cuadradoIzquierda {
-    background-color: #222222b8;
-    color: white;
-    margin-right: 20px;
-}
-
-.cuadradoDerecha {
-    background-color: #fff;
-    color: #222222b8;
-}
-
-.titulo {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.texto {
-    margin-bottom: 20px;
-}
-
-.info {
-    margin-top: 20px;
-}
-
-.contacto-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.icon {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    width: 30px;
-}
-
-.input {
-    width: calc(100% - 30px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1rem;
-}
-
-textarea.input {
-    height: 100px;
-    resize: vertical;
-}
-
-.btn {
-    background-color: #dae529;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 1rem;
-}
-
-.btn:hover {
-    background-color: #c1ca44;
-}
-*/
-
-
 /* CSS Login.html */
 .main-secundario {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    flex-wrap: wrap;
+    align-items: center; /* Esto centrará la sección verticalmente */
+    min-height: 100vh; /* Esto proporciona altura mínima para el centrado vertical */
+    padding: 20px;
 }
 
 .login-container {
@@ -1031,6 +944,17 @@ footer{
 
 
 @media (max-width: 768px){
+    .quienes_somos {
+        flex-direction: column; 
+    }
+
+    .texto-container, .imagen-container {
+        flex-basis: 100%; 
+    }
+
+    h2 {
+        font-size: 1.75rem; 
+    }
     .texto_inicio h1{
         font-size: 2.5rem;
     }
