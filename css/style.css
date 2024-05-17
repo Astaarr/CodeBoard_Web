@@ -833,7 +833,7 @@ textarea.input {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
+    margin: 2%;
 }
 
 .container-form {
@@ -844,7 +844,7 @@ textarea.input {
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
     transition: all 1s ease;
     margin: 10px;
-    ;
+    border: 1px solid black;
 }
 
 .informacion {
@@ -852,7 +852,7 @@ textarea.input {
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: #09f;
+    background-color: #222222;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -864,12 +864,12 @@ textarea.input {
 
 .informacion-hijo h2 {
     font-size: 2.5rem;
-    color: #555;
+    color: white;
 }
 
 .informacion-hijo p {
     margin: 15px 0;
-    color: #555;
+    color: white;
 }
 
 .informacion-hijo input {
@@ -884,9 +884,10 @@ textarea.input {
 }
 
 .informacion-hijo input:hover {
-    background-color: #a19f9f;
+    background-color: white;
     border: none;
-    color: #fff;
+    font-size: .90rem;
+    color: black;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -896,7 +897,7 @@ textarea.input {
     justify-content: center;
     width: 60%;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -907,11 +908,11 @@ textarea.input {
 
 .form-informacion-hijo h2 {
     font-size: 2rem;
-    color: #555;
+    color: black;
 }
 
 .form-informacion-hijo p {
-    color: #555;
+    color: black;
 }
 
 .iconos-form {
@@ -923,13 +924,13 @@ textarea.input {
     padding: 15px;
     cursor: pointer;
     margin: 0 10px;
-    color: #9191bd;
+    color: #000000;
     transition: background-color 0.3s ease;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .iconos-form i:hover {
-    background-color: #c7c7f3;
+    background-color: black;
     color: #fff;
 }
 
@@ -958,12 +959,13 @@ textarea.input {
 }
 
 .formulario label i {
-    color: #a7a7a7;
+    color: black;
 }
 
 .formulario input[type="submit"] {
-    background-color: #9191bd;
-    color: #fff;
+    font-size: 0.95rem;
+    background-color: #fff;
+    color: black;
     border-radius: 20px;
     border: none;
     padding: 10px 15px;
@@ -973,7 +975,8 @@ textarea.input {
 }
 
 .formulario input[type="submit"]:hover {
-    background-color: #0a8;
+    background-color: black;
+    color: white;
 }
 
 .hide {
@@ -1029,12 +1032,6 @@ textarea.input {
         border-bottom-left-radius: 20px;
         border-top-right-radius: 0;
     }
-}
-/* CSS registro.html */
-
-.contenedorRegistro {
-    text-align: center;
-    padding-top: 10px;
 }
 
 /*Footer de la página web*/
