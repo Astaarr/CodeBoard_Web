@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background: white;
+    background: rgb(255, 252, 252);
     font-family: myFont;
     color: black;
     font-size: 16px;
@@ -434,7 +434,7 @@ h2 {
     background: #fff;
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .container-productos .encabezadoProductos {
@@ -878,7 +878,7 @@ textarea.input {
     border: 2px solid #a19f9f;
     border-radius: 20px;
     padding: 10px 20px;
-    color: #a19f9f;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -909,6 +909,7 @@ textarea.input {
 .form-informacion-hijo h2 {
     font-size: 2rem;
     color: black;
+    text-shadow: none;
 }
 
 .form-informacion-hijo p {
@@ -963,15 +964,17 @@ textarea.input {
 }
 
 .formulario input[type="submit"] {
-    font-size: 0.95rem;
+    padding: 0.6rem 1.3rem;
     background-color: #fff;
-    color: black;
-    border-radius: 20px;
-    border: none;
-    padding: 10px 15px;
+    border: 2px solid #000000;
+    font-size: 0.95rem;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
     cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-top: 2%;
 }
 
 .formulario input[type="submit"]:hover {
@@ -985,7 +988,7 @@ textarea.input {
 }
 
 
-/*Responsive form*/
+
 @media screen and (max-width: 750px) {
 
     /* html{
@@ -1145,13 +1148,11 @@ footer {
     }
 }
 
-
-@media (max-width:895px) {
+@media (max-width: 895px) {
     .texto_inicio {
         transform: translate(-50%, -70%);
     }
 }
-
 
 @media (max-width: 768px) {
     .quienes_somos {
@@ -1179,13 +1180,10 @@ footer {
     }
 }
 
-
-
 @media (max-width: 576px) {
     .hamburguesa_bar {
         width: 100%;
     }
-
     .container-productos {
         width: 340px;
     }
@@ -1208,8 +1206,7 @@ footer {
     }
 }
 
-
-@media (max-width: 446px) {
+@media (max-width: 462px) {
     .texto_inicio {
         transform: translate(-50%, -60%);
     }
@@ -1221,11 +1218,117 @@ footer {
 
     .texto_inicio p {
         font-size: 0.800rem;
-        margin-bottom: 10px
+        margin-bottom: 10px;
     }
 
     .texto_inicio a {
         font-size: 0.675rem;
         padding: 2px 8px;
+    }
+    .contenedorFormulario{
+        padding: 1rem;
+    }
+    #contactForm{
+        padding: 1.5rem 1.5rem;
+    }
+    .titulo{
+        font-size: 18pt;
+    }
+    .contenedorInput input{
+        width: 80%;
+    }
+    .input-container textarea{
+        width: 90%;
+    }
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .informacion {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0;
+    }
+    .information img {
+        width: 30px;
+    }
+    .information p{
+        font-size: 10pt;
+    }
+    .form-informacion {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+    .infoContacto .titulo{
+        font-size: 16pt;
+    }
+    .infoContacto .text{
+        font-size: 14px
+    }
+    .redesSociales p{
+        font-size: 12pt;
+    }
+    .iconosRedes a{
+        width: 34px;
+        height: 34px;
+    }
+    .iconosRedes img{
+        width: 34px;
+        height: 34px;
+    }
+    .informacion-hijo h2{
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container-form {
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+    }
+
+    .informacion {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 20px
+    }
+
+    .form-informacion {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .informacion {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0;
+    }
+
+    .form-informacion {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
     }
 }
