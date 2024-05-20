@@ -987,56 +987,6 @@ textarea.input {
     transform: translateY(-300%);
 }
 
-
-
-@media screen and (max-width: 750px) {
-
-    /* html{
-        font-size: 12px;
-    } */
-    .container-form {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .informacion {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-    }
-
-    .form-informacion {
-        width: 100%;
-        border-radius: 0 0 20px 20px;
-    }
-}
-
-@media screen and (max-width:580px) {
-    html {
-        font-size: 15px;
-    }
-
-    .container-form {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .informacion {
-        width: 100%;
-        padding: 20px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0;
-    }
-
-    .form-informacion {
-        width: 100%;
-        padding: 20px;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 0;
-    }
-}
-
 /*Footer de la página web*/
 footer {
     width: 100%;
@@ -1126,7 +1076,51 @@ footer {
 
 
 /* Responsive */
-@media (max-width: 992px) {
+@media screen and (max-width: 750px) {
+    .container-form {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .informacion {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .form-informacion {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .informacion {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0;
+    }
+
+    .form-informacion {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
     .links {
         display: none;
     }
@@ -1148,7 +1142,7 @@ footer {
     }
 }
 
-@media (max-width: 895px) {
+@media screen and (max-width: 895px) {
     .texto_inicio {
         transform: translate(-50%, -70%);
     }
@@ -1183,7 +1177,7 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .hamburguesa_bar {
         width: 100%;
     }
@@ -1209,7 +1203,7 @@ footer {
     }
 }
 
-@media (max-width: 462px) {
+@media screen and (max-width: 462px) {
     .texto_inicio {
         transform: translate(-50%, -60%);
     }
