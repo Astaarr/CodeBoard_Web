@@ -569,17 +569,10 @@ h2 {
     font-weight: 400;
 }
 
-.detalles-precio span::before {
-    content: "€";
-    font-size: 1.25rem;
-    left: -13px;
-    top: 17px;
-}
-
 .detalles-precio span::after {
-    content: "/mes";
+    content: "€/mes";
     font-size: 1.25rem;
-    right: -45px;
+    right: -55px;
     bottom: 17px;
 }
 
