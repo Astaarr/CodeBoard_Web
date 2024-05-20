@@ -217,6 +217,22 @@ main {
     margin: auto;
 }
 
+.volverArriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    z-index: 99999;
+    display: block;
+}
+.volverArribaFooter{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    z-index: 999999;
+    display: none;
+}
 /*Quienes somos*/
 .quienes_somos {
     display: flex;
@@ -1085,11 +1101,17 @@ footer {
     .informacion {
         width: 100%;
         border-radius: 20px 20px 0 0;
+        padding-bottom: 20px
     }
 
     .form-informacion {
         width: 100%;
         border-radius: 0 0 20px 20px;
+    }
+    .container-form {
+        flex-direction: column;
+        height: auto;
+        width: 80%;
     }
 }
 
@@ -1284,51 +1306,5 @@ footer {
     }
     .contenedorPersonajes{
         max-width: 300px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .container-form {
-        flex-direction: column;
-        height: auto;
-        width: 80%;
-    }
-
-    .informacion {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        padding-bottom: 20px
-    }
-
-    .form-informacion {
-        width: 100%;
-        border-radius: 0 0 20px 20px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    html {
-        font-size: 15px;
-    }
-
-    .container-form {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .informacion {
-        width: 100%;
-        padding: 20px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0;
-    }
-
-    .form-informacion {
-        width: 100%;
-        padding: 20px;
-        border-bottom-left-radius: 20px;
-        border-top-right-radius: 0;
     }
 }

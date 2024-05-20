@@ -20,6 +20,43 @@ opcionesMenu.forEach(opcion => {
 
 
 
+function comprobarAlturadePantalla() {
+    var footer = document.querySelector('footer');
+    var fondo = document.querySelector('.fondo');
+    var volverArriba = document.querySelector('.volverArriba');
+    var volverArribaFooter = document.querySelector('.volverArribaFooter');
+
+    // Obtener la posición del footer y del video
+    var footerAltura = footer.getBoundingClientRect().top;
+    var windowAltura = window.innerHeight;
+    var videoAltura = fondo.getBoundingClientRect().bottom;
+
+    // Condición para cuando el scroll está dentro del rango del video
+    if (videoAltura > windowAltura || window.innerWidth <= 576) {
+        // Si el vídeo todavía está en pantalla
+        volverArriba.style.display = 'none';
+        volverArribaFooter.style.display = 'none';
+    } else if (footerAltura < windowAltura) {
+        // Si El scroll está dentro del rango del footer
+        volverArriba.style.display = 'none';
+        volverArribaFooter.style.display = 'block';
+    } else {
+        // El scroll está fuera del rango del vídeo y el footer
+        volverArriba.style.display = 'block';
+        volverArribaFooter.style.display = 'none';
+    }
+}
+
+// Evento de scroll
+window.addEventListener('scroll', comprobarAlturadePantalla);
+
+
+// Flecha volver Arriba
+function volverArriba(){
+    window.scrollTo(0,0);
+}
+
+
 // Selecciona todos los elementos HTML que tienen la clase "input"
 const inputs = document.querySelectorAll(".input");
 
