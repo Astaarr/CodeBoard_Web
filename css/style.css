@@ -839,6 +839,7 @@ textarea.input {
 
 /* CSS Login.html */
 .form-centrado {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1300,4 +1301,8 @@ footer {
     .contenedorPersonajes{
         max-width: 300px;
     }
+}
+
+.contenedorFormulario{
+    height: 100vh;
 }
